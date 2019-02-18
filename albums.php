@@ -5,9 +5,7 @@ if (!session_id()) {
 
 include("config.php");
 
-// Get photo albums of Facebook page using Facebook Graph API
-$facebook_page_id = "585338791518628";
-$_SESSION['facebook_page_id'] = $facebook_page_id;
+
 //$graph_album_link = "https://graph.facebook.com/v3.2/{$facebook_page_id}?fields={$fields}&access_token={$access_token}";
 
 $graph_album_link = "https://graph.facebook.com/v3.2/" . $facebook_page_id . "?fields=albums%7Bcover_photo%2Cphoto_count%2Clink%2Cname%2Cid%2Cdescription%7D&access_token=" . $access_token;

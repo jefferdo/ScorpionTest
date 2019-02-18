@@ -22,4 +22,9 @@ if (isset($_SESSION['facebook_access_token'])) {
     // Store access token in session
     $_SESSION['facebook_access_token'] = $access_token;
 }
+
+$facebook_page_id = "585338791518628";
+// Get photo albums of Facebook page using Facebook Graph API
+$_SESSION['facebook_page_id'] = $facebook_page_id;
+
 ?>
